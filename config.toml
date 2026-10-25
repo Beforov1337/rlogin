@@ -1,0 +1,17 @@
+# Service name in PAM (/etc/pam.d/login)
+pam_service = "login"
+
+# Default banner title shown at the top
+banner = "WELCOME TO LINUX"
+
+# Optional pre-selected user (if not set, first detected user will be selected)
+# default_user = "beforov"
+
+# Optional pre-selected session (e.g. "Mango", "Sway", "Default Shell")
+# default_session = "Mango"
+
+# Hide the full screen outer borders
+hide_borders = false
+
+# Automatically focus password input if a user is pre-selected
+auto_focus_password = true

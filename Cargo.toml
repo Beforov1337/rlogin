@@ -1,0 +1,16 @@
+[package]
+name = "rlogin"
+version = "0.1.0"
+edition = "2024"
+description = "A fast, minimalist, keyboard-driven TUI login manager for Linux"
+license = "MIT"
+authors = ["Beforov1337"]
+
+[dependencies]
+crossterm = "0.29.0"
+nix = { version = "0.31.3", features = ["user", "process", "term", "hostname"] }
+pam = "0.8.0"
+ratatui = "0.30.2"
+serde = { version = "1.0.229", features = ["derive"] }
+toml = "1.1.8"
+users = "0.11.0"

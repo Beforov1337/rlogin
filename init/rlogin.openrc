@@ -1,0 +1,13 @@
+#!/sbin/openrc-run
+description="rlogin TUI Login Manager"
+supervisor="supervise-daemon"
+command="/usr/local/bin/rlogin"
+command_args="--tty 2"
+
+supervise_daemon_args="--stdout /dev/tty2 --stderr /dev/tty2 --stdin /dev/tty2"
+
+depend() {
+    need localmount
+    after bootmisc
+    provide display-manager
+}

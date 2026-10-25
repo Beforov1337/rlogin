@@ -1,0 +1,1 @@
+c2:2345:respawn:/usr/local/bin/rlogin --tty 2 < /dev/tty2 > /dev/tty2 2>&1

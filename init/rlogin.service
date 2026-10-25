@@ -1,0 +1,22 @@
+[Unit]
+Description=rlogin TUI Login Manager
+After=systemd-user-sessions.service plymouth-quit-wait.service
+After=rc-local.service
+Before=getty.target
+Conflicts=getty@tty2.service
+
+[Service]
+Type=idle
+ExecStart=/usr/local/bin/rlogin --tty 2
+StandardInput=tty
+StandardOutput=tty
+StandardError=journal
+TTYPath=/dev/tty2
+TTYReset=yes
+TTYVHangup=yes
+TTYVTDisallocate=yes
+Restart=always
+RestartSec=0
+
+[Install]
+WantedBy=graphical.target
