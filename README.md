@@ -81,4 +81,4 @@ c2:2345:respawn:/usr/local/bin/rlogin --tty 2 < /dev/tty2 > /dev/tty2 2>&1
 ```
 
 ## License
-MIT
+GPL-3.0-or-later

@@ -3,7 +3,7 @@ name = "rlogin"
 version = "0.1.0"
 edition = "2024"
 description = "A fast, minimalist, keyboard-driven TUI login manager for Linux"
-license = "MIT"
+license = "GPL-3.0-or-later"
 authors = ["Beforov1337"]
 
 [dependencies]
